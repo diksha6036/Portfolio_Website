@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.parent{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.left{
+    background: linear-gradient(to right, #FFD194, #d3b184); 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name:left-right;
+    animation-duration: 3s;
+    animation-direction:normal ;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes left-right{
+    from{
+        height: 100%;
+        width: 0%; 
+        background: linear-gradient(to right, #FFD194, #d3b184);
+    }
+    to{
+        height: 100%;
+        width: 28%; 
+    }
+}
+.right{
+    /* background-color:dimgrey; */
+    background-image: url("bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name:full;
+   animation-duration: 3s;
+   animation-direction:normal ;
+   animation-fill-mode:forwards;
+   animation-timing-function: ease-in-out;
+}
+@keyframes full{
+    from{
+        height: 100%;
+        width: 100%; 
+        
+    }
+    to{
+        height: 100%;
+        width: 72%;
+    }
+}
+.live{
+    height: 80%;
+    width: 40%;
+
+    display: flex;
+    margin-right:23rem;
+    justify-content: center;
+    align-items: center;
+}
+.Wel{
+    color:rgb(108, 25, 25);
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Tilt Prism', cursive;
+    /* font-family: 'Rubik Puddles', cursive; */
+font-size: 2rem; 
+
+   }
+#leftImg{
+   height: 20%;
+   border-radius: 50%;
+}
+.img{
+    margin-top: 1.5rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    /* background-color:burlywood; */
+    background-image: url("icon.jpeg");
+
+}
+.spara{
+    margin-top: 2rem;
+}
+.lists{
+
+    margin-top: 1rem;
+}
+.navlist{
+    list-style-type: none;
+    font-size:large;
+}
+.span{
+    margin-left: 0.5rem;
+    font-size:larger;
+    color:darkolivegreen;
+}
+.lipad{
+    margin: 1rem;
+    color:cornsilk;
+    font-size:larger;
+    font-weight:800;
+    font-family: 'Lumanosimo', cursive;
+}
+
+.copyright{
+    margin-top: 1.4rem;
+    
+    color:slategrey;
+}
+.head{
+    color:darkgoldenrod;
+    font-family: 'Satisfy', cursive;
+}
+
+.student{
+    color:cornflowerblue;
+}
+a:hover{
+    color:cornflowerblue;
+    cursor: pointer;
+    text-decoration:underline;
+    font-size:x-large;
+}
+a{
+    text-decoration:none;
+    color:cornsilk;
+ 
+}
+

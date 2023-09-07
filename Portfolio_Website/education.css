@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.parent{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.left{
+    background: linear-gradient(to right, #FFD194, #d3b184); 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name:left-right;
+    animation-duration: 3s;
+    animation-direction:normal ;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes left-right{
+    from{
+        height: 100%;
+        width: 0%; 
+        background: linear-gradient(to right, #FFD194, #d3b184);
+    }
+    to{
+        height: 100%;
+        width: 28%; 
+    }
+}
+.right{
+    background: linear-gradient(to right, #ffd452, #544a7d);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name:full;
+   animation-duration: 3s;
+   animation-direction:normal ;
+   animation-fill-mode:forwards;
+   animation-timing-function: ease-in-out;
+}
+@keyframes full{
+    from{
+        height: 100%;
+        width: 100%; 
+        
+    }
+    to{
+        height: 100%;
+        width: 72%;
+    }
+}
+
+#leftImg{
+   height: 20%;
+   border-radius: 50%;
+}
+.img{
+    margin-top: 1.5rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    /* background-color:burlywood; */
+    background-image: url("icon.jpeg");
+
+}
+.spara{
+    margin-top: 2rem;
+}
+.lists{
+
+    margin-top: 1rem;
+}
+.navlist{
+    list-style-type: none;
+    font-size:large;
+}
+.span{
+    margin-left: 0.5rem;
+    font-size:larger;
+    color:darkolivegreen;
+}
+.lipad{
+    margin: 1rem;
+    color:cornsilk;
+    font-size:larger;
+    font-weight:800;
+    font-family: 'Lumanosimo', cursive;
+}
+
+.copyright{
+    margin-top: 1.4rem;
+    
+    color:slategrey;
+}
+.head{
+    color:darkgoldenrod;
+    font-family: 'Satisfy', cursive;
+}
+
+.student{
+    color:cornflowerblue;
+}
+a:hover{
+    color:cornflowerblue;
+    cursor: pointer;
+    text-decoration:underline;
+    font-size:x-large;
+}
+a{
+    text-decoration:none;
+    color:cornsilk;
+ 
+}
+
+.fd{
+    /* width: 70%; */
+    /* height: 15%;
+    background-color:bisque;
+    border-radius: 25%; */
+    animation-name: fd1;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes fd1{
+    from{
+        width: 0;
+        height: 0%;
+      margin-top:0rem;
+    }
+    to{
+        width: 70%;
+        height: 15%;
+        background-color:darkgrey;
+        border-radius: 25%;
+      margin-top:2rem;
+    }
+}
+
+.sd{
+
+    animation-name: sd1;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes sd1{
+    from{
+        width: 0;
+        height: 0%;
+      margin-top:0rem;
+    }
+    to{
+        width: 70%;
+        height: 15%;
+        background-color:darkgrey;
+        border-radius: 25%;
+      margin-top:4rem;
+    }
+}
+.td{
+
+    animation-name: td1;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes td1{
+    from{
+        width: 0;
+        height: 0%;
+      margin-top:0rem;
+    }
+    to{
+        width: 70%;
+        height: 15%;
+        background-color:darkgrey;
+        border-radius: 25%;
+      margin-top:4rem;
+    }
+}
+.down{
+    animation-name: d;
+   visibility: hidden;
+   animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes d {
+    from{
+        margin-top:0rem;
+        margin-left:0rem;
+        font-size: 0rem;
+        visibility: hidden;
+    }
+   to{
+    margin-top: 1rem;
+    margin-left: 15rem;
+    color:darkcyan;
+    font-family: 'Satisfy', cursive;
+    visibility: visible;
+   }
+}
+
+.para1{
+    animation-name: p;
+    visibility: hidden;
+    animation-duration: 1s;
+     animation-delay: 1s;
+     animation-fill-mode: forwards;
+}
+@keyframes p {
+    from{
+        margin-top:0rem;
+        margin-left:0rem;
+        font-size: 0rem;
+        visibility: hidden;
+    }
+   to{
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+    color:mediumorchid;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.7rem;
+    visibility: visible;
+   }
+}
+
+

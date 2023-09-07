@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.parent{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.left{
+    background: linear-gradient(to right, #FFD194, #d3b184); 
+   
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     animation-name:left-right;
+    animation-duration: 3s;
+    animation-direction:normal ;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes left-right{
+    from{
+        height: 100%;
+        width: 0%; 
+        background: linear-gradient(to right, #FFD194, #d3b184);
+    }
+    to{
+        height: 100%;
+        width: 28%; 
+    }
+}
+.right{
+   
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #A8CABA, #5D4157); 
+    animation-name:full;
+    animation-duration: 3s;
+    animation-direction:normal ;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes full{
+    from{
+        height: 100%;
+        width: 100%; 
+        
+    }
+    to{
+        height: 100%;
+        width: 72%;
+    }
+}
+#leftImg{
+   height: 20%;
+   border-radius: 50%;
+}
+.img{
+    margin-top: 1.5rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    /* background-color:burlywood; */
+    background-image: url("icon.jpeg");
+
+}
+.spara{
+    margin-top: 2rem;
+}
+.lists{
+
+    margin-top: 1rem;
+}
+.navlist{
+    list-style-type: none;
+    font-size:large;
+}
+.span{
+    margin-left: 0.5rem;
+    font-size:larger;
+    color:darkolivegreen;
+}
+.lipad{
+    margin: 1rem;
+    color:cornsilk;
+    font-size:larger;
+    font-weight:800;
+    font-family: 'Lumanosimo', cursive;
+}
+
+.copyright{
+    margin-top: 1.4rem;
+    
+    color:slategrey;
+}
+.head{
+    color:darkgoldenrod;
+    font-family: 'Satisfy', cursive;
+}
+
+.student{
+    color:cornflowerblue;
+}
+a:hover{
+    color:cornflowerblue;
+    cursor: pointer;
+    text-decoration:underline;
+    font-size:x-large;
+}
+a{
+    text-decoration:none;
+    color:cornsilk;
+ 
+}
+.contact{
+    margin-top: 7rem;
+    margin-left: 7rem;
+    font-family: 'Satisfy', cursive;
+    font-size:3.5rem;
+    color:chocolate;
+}
+.Instalogo{
+    margin-top: 3rem;
+    margin-left: 19rem;
+    width: 10%;
+}
+.email{
+    width: 13%;
+    margin-left: 10rem;
+    height: 10%;
+}
+.gitlogo{
+   margin-top:6rem;
+    width: 12%;
+    margin-left: 19rem;
+    height: 10%;
+}
+.tele{
+    margin-top:6.5rem;
+    width: 16%;
+    margin-left: 10rem;
+    height: 10%;
+}
